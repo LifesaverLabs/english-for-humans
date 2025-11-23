@@ -4,6 +4,13 @@ import { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlayCircle } from "lucide-react";
 
+const featuredVideo = {
+  title: "English Spelling is Broken",
+  videoId: "7BRn4kYxuE4",
+  isShorts: true,
+  description: "A compelling visual demonstration of why English spelling needs reform."
+};
+
 const videos = [
   {
     title: "Why English Spelling is Ridiculous",
@@ -42,6 +49,48 @@ export const Resources = () => {
             Explore the evidence for why English spelling needs reform
           </p>
         </motion.div>
+
+        {/* Featured Video */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="max-w-2xl mx-auto mb-16"
+        >
+          <Card className="overflow-hidden border-4 border-primary shadow-2xl">
+            <CardContent className="p-0">
+              <div className="aspect-[9/16] md:aspect-video bg-foreground/5 relative">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${featuredVideo.videoId}`}
+                  title={featuredVideo.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <div className="p-6 bg-card">
+                <h3 className="text-2xl font-bold text-foreground mb-2">
+                  {featuredVideo.title}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {featuredVideo.description}
+                </p>
+                <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 text-sm">
+                  <p className="text-muted-foreground">
+                    <span className="font-semibold text-foreground">Note for visitors in restricted regions:</span> YouTube is blocked in some countries including China. 
+                    We encourage community members to mirror this content on accessible platforms like Bilibili or WeChat Video.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h3 className="text-3xl font-bold text-foreground mb-4">
+            Additional Resources
+          </h3>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {videos.map((video, index) => (
