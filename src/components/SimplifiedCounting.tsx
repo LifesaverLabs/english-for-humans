@@ -47,7 +47,7 @@ export const SimplifiedCounting = () => {
             Beyond spelling reform lies an even deeper opportunity: revolutionizing how we count and calculate.
           </p>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Research by Malcolm Gladwell and cognitive scientists reveals that Chinese dialects possess superior number systems—regular, monosyllabic, and transparent in structure. These systems enable children to learn counting and mental math with remarkable speed and ease compared to English's irregular system.
+            Research popularized by Malcolm Gladwell and cognitive scientists reveals that Chinese dialects possess superior number systems—regular, monosyllabic, and transparent in structure. These systems enable children to learn counting and mental math with remarkable speed and ease compared to English's irregular system.
           </p>
         </motion.div>
 
