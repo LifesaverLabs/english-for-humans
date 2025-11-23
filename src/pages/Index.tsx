@@ -4,6 +4,7 @@ import { BookFeature } from "@/components/BookFeature";
 import { Resources } from "@/components/Resources";
 import { Community } from "@/components/Community";
 import { TransitionTools } from "@/components/TransitionTools";
+import { SimplifiedCounting } from "@/components/SimplifiedCounting";
 import { Dialects } from "@/components/Dialects";
 import { Footer } from "@/components/Footer";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <Resources />
       <Community />
       <TransitionTools />
+      <SimplifiedCounting />
       <Dialects />
       <Footer />
     </div>
