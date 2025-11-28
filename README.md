@@ -1,4 +1,4 @@
-# English for Humans
+# English for Humans: Enough is Enuf
 
 A movement advocating for sensible spelling reform across English-speaking communities worldwide.
 
